@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Source Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/studio-pro-regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Source Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/studio-pro-bold.ttf) format('ttf');
+}
+
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./howitwork.css');
