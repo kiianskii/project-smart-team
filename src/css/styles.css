@@ -23,18 +23,18 @@
 @import url('./order.css');
 @import url('./footer.css');
 
-/* :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  --brand-color: #7A3145;
+  --secondary-brand-color: #576F35;
+  --background: #FBFBFB;
+  --text-color: #141414;
+  --hover-color: #622133;
+}
+
+body {
+  font-family: "Studio Pro";
   font-size: 16px;
-  line-height: 24px;
+  font-style: normal;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} */
+  letter-spacing: -0.02em;
+}
