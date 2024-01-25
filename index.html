@@ -5,8 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/project-smart-team/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenHarvest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <link rel="stylesheet" href="/project-smart-team/assets/index-44d5cc85.css">
+    <link rel="stylesheet" href="/project-smart-team/assets/index-c3498d09.css">
   </head>
   <body>
     <header>
@@ -50,12 +57,29 @@
       </p>
     </div>
     <div class="hero-img">
-      <!-- <img
-        src="../img/up/box-fruits@1x.jpg"
-        alt="Box with fruits"
-        width="650px"
-        height="800px"
-      /> -->
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="/project-smart-team/assets/box-fruits@1x-adb7c028.jpg 1x, /project-smart-team/assets/box-fruits@2x-ec581404.jpg 2x"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-smart-team/assets/box-fruits-tab@1x-658aacf8.jpg 1x, /project-smart-team/assets/box-fruits-tab@2x-01449b53.jpg 2x"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-smart-team/assets/box-fruits-mob@1x-22b1e699.jpg 1x, /project-smart-team/assets/box-fruits-mob@2x-43f1a949.jpg 2x"
+        />
+        <img
+          src="/project-smart-team/assets/box-fruits@1x-adb7c028.jpg"
+          alt="Box with fruits"
+          width="650px"
+          height="800px"
+        />
+      </picture>
     </div>
   </div>
 </section>
