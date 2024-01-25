@@ -1,0 +1,66 @@
+/* #region general */
+body {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* #endregion */
+
+/* #region reset styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* #endregion */
+
+/* #region logo styles*/
+.logo {
+}
+/* #endregion */
+
+/* #region menu styles */
+.nav {
+  color: var(--background);
+  text-align: center;
+  line-height: 1.25;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item {
+  gap: 12px;
+}
+
+/* #endregion */
+
+/* #region link styles */
+.nav-link {
+  color: inherit;
+  border-radius: 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  padding: 12px;
+}
+.nav-link-pink {
+  border-radius: 30px;
+  background-color: var(--brand-color);
+  padding: 16px 32px;
+  margin-left: 12px;
+}
+/* #endregion */
+
+/* #region modal styles*/
+
+/* #endregion */
