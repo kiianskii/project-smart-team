@@ -1,13 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
 .vegetables {
     background-color: var(--brand-color);
     width: 100%;
@@ -43,11 +33,15 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.25;
 letter-spacing: -0.02em;
+width: 626px;
+display: inline-flex;
+flex-wrap: wrap;
+margin-right: 322px;
 }
 
 .vegetables-btn { 
-    padding: 16px, 32px;
     color: var(--background);
+    background-color: var(--brand-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.11;
@@ -56,14 +50,18 @@ letter-spacing: -0.02em;
     cursor: pointer;
     border-radius: 30px;
 border: 1px solid rgba(251, 251, 251, 0.20);
-
-
+display: inline-flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-bottom: 50px;
   }
 
 .vegetables-list {
     display: flex;
   flex-wrap: wrap;
-  gap: 18px, 28px;
+  gap: 28px, 18px;
 }
 
 .vegetables-item {
@@ -79,21 +77,24 @@ width: calc((100% - 18px * 2) / 4);
 }
 
 .vegetables-caption {
-    margin: 32px 0 12px;
+    margin: 32px 0 12px 32px;
     color: var(--brand-color);
 font-family: "Studio Pro";
 font-size: 32px;
 font-weight: 700;
 line-height: 1;
 letter-spacing: -0.015em;
+text-align: left;
 }
 
 .vegetables-price {
     color: var(--text-color);
-font-family: "Studio Pro";
 font-size: 14px;
 font-weight: 700;
 line-height: 1.29;
 letter-spacing: -0.015;
 text-transform: uppercase;
+text-align: left;
+margin-left: 32px;
+margin-bottom: 10px;
 }
