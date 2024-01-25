@@ -1,11 +1,6 @@
-.reviews {
-    /* padding: 100px; */
-    outline: 1px solid red;
-}
 
 .reviews .container{
     padding: 100px;
-    outline: 1px solid lime;
 }
 
 .reviews-title {
@@ -32,7 +27,6 @@
 }
 
 .reviews-list {
-    list-style-type: none;
     display: flex;
     gap: 25px;
     justify-content: center;
