@@ -38,13 +38,4 @@
 }
 
 .hero-img {
-  width: 650px;
-  height: 800px;
-  background: linear-gradient(
-      0deg,
-      rgba(20, 20, 20, 0.2) 0%,
-      rgba(20, 20, 20, 0.2) 100%
-    ),
-    url(../img/up/box-fruits@1x.jpg),
-    lightgray -36.315px -7.412px / 119.571% 101.142% no-repeat;
 }
