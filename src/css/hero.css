@@ -13,10 +13,8 @@
   margin-right: auto;
 }
 .hero-title {
-  color: #fbfbfb;
-  font-family: 'Studio Pro';
+  color: var(--background);
   font-size: 76px;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: -0.015em;
   text-transform: uppercase;
@@ -27,15 +25,9 @@
 }
 
 .hero-text {
-  color: #fbfbfb;
-  font-family: 'Studio Pro';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25; /* 125% */
+  color: var(--background);
+  line-height: 1.25;
   letter-spacing: -0.02em;
   width: 472px;
   margin-left: 100px;
-}
-
-.hero-img {
 }
