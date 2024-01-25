@@ -2,8 +2,7 @@
   margin: 100px;
 }
 .advertisement-wrapper {
-  color: #141414;
-
+  color: var(--text-color);
   font-size: 76px;
   font-weight: 700;
   line-height: 1.05;
@@ -11,8 +10,8 @@
   text-transform: uppercase;
 }
 .advetrisement-discount {
-  color: #fbfbfb;
+  color: var(--background);
   border-radius: 12px;
-  background-color: #576f35;
+  background-color: var(--secondary-brand-color);
   padding: 0 10px;
 }
