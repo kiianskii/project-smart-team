@@ -24,17 +24,26 @@
 @import url('./footer.css');
 
 :root {
-  --brand-color: #7A3145;
-  --secondary-brand-color: #576F35;
-  --background: #FBFBFB;
+  --brand-color: #7a3145;
+  --secondary-brand-color: #576f35;
+  --background: #fbfbfb;
   --text-color: #141414;
   --hover-color: #622133;
 }
 
 body {
-  font-family: "Studio Pro";
+  font-family: 'Studio Pro';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.02em;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 100px;
 }
