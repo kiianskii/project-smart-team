@@ -1,3 +1,12 @@
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./howitwork.css');
+@import url('./advertisement.css');
+@import url('./vegetables.css');
+@import url('./review.css');
+@import url('./order.css');
+@import url('./footer.css');
+
 @font-face {
   font-family: 'Source Pro';
   font-style: normal;
@@ -13,15 +22,6 @@
   font-display: swap;
   src: url(../fonts/studio-pro-bold.ttf) format('ttf');
 }
-
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./howitwork.css');
-@import url('./advertisement.css');
-@import url('./vegetables.css');
-@import url('./review.css');
-@import url('./order.css');
-@import url('./footer.css');
 
 :root {
   --brand-color: #7a3145;
@@ -45,5 +45,5 @@ img {
 
 .container {
   width: 1280px;
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
