@@ -9,6 +9,12 @@ body {
   left: 0;
   width: 100%;
 }
+
+.header-container {
+  max-width: 1280px;
+  padding: 32px 100px 0px;
+  display: flex;
+}
 /* #endregion */
 
 /* #region reset styles */
@@ -25,6 +31,24 @@ a {
 
 /* #region logo styles*/
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  margin-right: auto;
+}
+/* #endregion */
+
+/* #region icon styles*/
+.icon {
+  stroke: var(--background);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.logo .icon {
+  fill: var(--background);
+  display: flex;
 }
 /* #endregion */
 
@@ -58,6 +82,12 @@ a {
   background-color: var(--brand-color);
   padding: 16px 32px;
   margin-left: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 }
 /* #endregion */
 
