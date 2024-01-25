@@ -1,0 +1,18 @@
+.advertisement {
+  margin: 100px;
+}
+.advertisement-wrapper {
+  color: #141414;
+
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+.advetrisement-discount {
+  color: #fbfbfb;
+  border-radius: 12px;
+  background-color: #576f35;
+  padding: 0 10px;
+}
