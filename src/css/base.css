@@ -22,6 +22,10 @@
   --hover-color: #622133;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Studio Pro';
   font-size: 16px;
@@ -58,7 +62,7 @@ img {
 }
 
 .container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }

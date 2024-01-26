@@ -108,6 +108,10 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.smoothie-img {
+    max-width: 100%;
+}
+
 .user-comment:focus {
     border-color: #7a3145;
     outline: none;
@@ -167,12 +171,19 @@
     gap: 8px;
 }
 
-.follow-list-item span {
+.follow-list-item:not(:last-child)::after {
+    content: '\002F';
     font-size: 24px;
     font-weight: 700;
     line-height: 1.08;
     letter-spacing: -0.015em;
     color: var(--background);
+}
+
+.follow-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .follow-social-link {
@@ -287,7 +298,7 @@
         letter-spacing: -0.015em;
     }
 
-    .follow-list-item span {
+    .follow-list-item {
         font-size: 32px;
         line-height: 1;
         letter-spacing: -0.015em;
