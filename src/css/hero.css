@@ -1,32 +1,112 @@
-.header-section {
+.hero-section {
   background-color: var(--secondary-brand-color);
-  width: 100%;
 }
 
-.header-section .container {
+.hero-section .container {
   display: flex;
-  padding-right: 0;
-  margin: 0 auto;
+  padding: 0;
   flex-wrap: wrap;
+  max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section .container {
+    padding-left: 100px;
+    flex-wrap: nowrap;
+    max-width: 1280px;
+  }
 }
 
 .hero-wrapper {
-  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    margin-top: 143px;
+    margin-bottom: 50px;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-wrapper {
+    margin-top: 230px;
+    margin-bottom: 50px;
+    margin-right: 28px;
+    margin-left: 0;
+  }
+}
+
 .hero-title {
   color: var(--background);
-  font-size: 76px;
+  font-size: 48px;
   line-height: 1;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  width: 502px;
-  margin-top: 230px;
-  margin-bottom: 136px;
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 76px;
+    padding: 0;
+    width: 704px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    width: 502px;
+    margin-bottom: 136px;
+  }
 }
 
 .hero-text {
   color: var(--background);
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
-  width: 472px;
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    line-height: 1.25;
+    font-size: 16px;
+    width: 603px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-text {
+    width: 472px;
+  }
+}
+
+.img-hero {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .img-hero {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img-hero {
+    width: 650px;
+  }
 }

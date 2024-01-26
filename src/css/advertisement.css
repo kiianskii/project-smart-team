@@ -3,16 +3,35 @@
 }
 .advertisement-wrapper {
   color: var(--text-color);
-  font-size: 76px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.015em;
   text-transform: uppercase;
 }
-.advetrisement-discount {
+
+@media screen and (min-width: 768px) {
+  .advertisement-wrapper {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement-wrapper {
+    font-size: 76px;
+  }
+}
+
+.advertisement-discount {
   color: var(--background);
   border-radius: 12px;
   background-color: var(--secondary-brand-color);
   padding: 0 14px;
   margin-left: -14px;
+}
+@media screen and (max-width: 767.98px) {
+  .advertisement-discount {
+    display: block;
+    margin-left: -10px;
+  }
 }
