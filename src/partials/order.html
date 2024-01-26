@@ -1,0 +1,118 @@
+<section class="order">
+    <div class="container">
+        <h2 class="order-title">
+            Fresh <span>Harvest</span> Box has got you covered  
+        </h2>
+        <p class="order-p">
+            Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. 
+            Order your box today and start enjoying the best that nature has to offer!
+        </p>
+        <div class="order-input-box">
+            <div class="order-form-wrapper">
+                <form class="order-form" name="order-form">
+                    <p class="order-form-text">
+                        Ordering <span class="purple">from us</span> is quick and easy! Fill
+                        out <span class="green">the form</span> below and we will contact
+                        you !
+                    </p>
+                    <div class="input-container">
+                        <label for="name" class="input-label"></label>
+                        <input 
+                            id="name"
+                            type="text"
+                            class="form-input"
+                            name="name"
+                            placeholder="Full Name"
+                            required
+                            pattern="[A-Za-z ']{3,}"
+                        />
+                    </div>
+                    <div class="input-container">
+                        <label for="email" class="input-label"></label>
+                        <input 
+                            id="email"
+                            type="text"
+                            class="form-input"
+                            name="email"
+                            placeholder="Email"
+                            required
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        />
+                    </div>
+                    <div class="input-container">
+                        <label for="user-comment" class="input-label"></label>
+                        <textarea 
+                            name="user-comment" 
+                            id="user-comment"
+                            class="user-comment"
+                            placeholder="Comment">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="order-button">Send</button>
+                </form>
+            </div>
+            <div class="order-follow">
+                <picture class="follow-img">
+                    <source 
+                        media="(min-width: 1280px)"
+                        sizes="(min-width: 1280px) 528px, 100vw"
+                        srcset="./img/freshBox/smoothies@1x.png 1x,
+                                ./img/freshBox/smoothies@2x.png 2x"    
+                    />
+                    <source
+                        media="(min-width: 768px) and (max-width:1279px)"
+                        sizes="(max-width: 1279px) 100vw, 528px"
+                        srcset="./img/freshBox/smoothies-tab@1x.png 1x,
+                                ./img/freshBox/smoothies-tab@2x.png 2x"
+                    />
+                    <source
+                        media="(min-width: 320px) and (max-width: 767.99px)"
+                        sizes="(max-width: 767.98px) 100vw, 528px"
+                        srcset="./img/freshBox/smoothies-mob@1x.png 1x,
+                                ./img/freshBox/smoothies-mob@2x.png 2x"
+                    />
+                    <img 
+                        src="./img/freshBox/smoothies-mob@1x.png"
+                        alt="Bottle Smoothies" 
+                    />
+                </picture>
+                <p class="follow-text">Follow us on our social networks:</p>
+                <ul class="follow-list">
+                    <li class="follow-list-item">
+                        <a 
+                            href="https://www.instagram.com/goitclub/"
+                            class="follow-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            instagram
+                        </a>
+                    </li>
+                    <li class="follow-list-item">
+                        <span>/</span>
+                    </li>
+                    <li class="follow-list-item">
+                        <a 
+                            href="https://www.facebook.com/goITclub/"
+                            class="follow-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            facebook
+                        </a>
+                    </li>
+                    <li class="follow-list-item">
+                        <span>/</span>
+                    </li>
+                    <li class="follow-list-item">
+                        <a 
+                            href="https://www.youtube.com/c/GoIT"
+                            class="follow-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            youtube
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
