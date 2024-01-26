@@ -1,4 +1,6 @@
-
+.reviews {
+    background-color: var(--background);
+}
 .reviews .container{
     padding: 100px;
 }
