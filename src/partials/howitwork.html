@@ -1,39 +1,75 @@
-<section>
-  <div>
-    <img
-      class="wrapper-img"
-      srcset=""
-      src=""
-      alt="Fitness woman"
-      width="430"
-      height="640"
-    />
-  </div>
-  <div>
-    <h2>
-      To order your <span class="wrap-text">vegetable</span> basket, simply
-      follow these <span class="wrap-text">easy steps</span>
-    </h2>
-    <p class="text">
-      Our baskets are assembled with care and delivered straight to your
-      doorstep, so you can enjoy the taste of fresh fruit without ever leaving
-      your home.
-    </p>
-    <ol class="wrapper-list">
-      <li class="wrapper-list-item">
-        Just choose <span class="wrap-text-li">the vegetable</span> you want to
-        order by clicking on the checkboxes
-        <span class="wrap-text-li">next to it</span>.
-      </li>
-      <li class="wrapper-list-item">
-        Click on <span class="wrap-text-li">the basket</span> and fill out the
-        form.
-      </li>
-      <li class="wrapper-list-item">
-        Sit back and relax! Your
-        <span class="wrap-text-li">fresh vegetables</span> basket will be
-        delivered.
-      </li>
-    </ol>
+<section class="section-list" id="how">
+  <div class="container">
+    <div class="container-picture">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/up/cooking@1x.png 1x, ./img/up/cooking@2x.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/up/cooking-tab@1x.png 1x,
+            ./img/up/cooking-tab@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/up/cooking-mob@1x.png 1x,
+            ./img/up/cooking-mob@2x.png 2x
+          "
+        />
+        <img
+          class="wrapper-img"
+          src="./img/up/cooking@1x.png"
+          alt="Cooking woman"
+          width="430"
+          height="640"
+        />
+      </picture>
+    </div>
+    <div class="container-list">
+      <h2 class="wrapper-title">
+        To order your <span class="wrap-text">vegetable</span> basket, simply
+        follow these <span class="wrap-text">easy steps</span>
+      </h2>
+      <p class="text">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <ol class="wrapper">
+        <div class="wrapper-list">
+          <li class="wrapper-list-item">
+            <svg class="wrapper-icon" width="52" height="52">
+              <use href="./img/icons.svg#icon-number-one"></use>
+            </svg>
+            Just choose <span class="wrap-text-li">the vegetable</span> you want
+            to order by clicking on the checkboxes
+            <span class="wrap-text-li">next to it</span>.
+          </li>
+        </div>
+        <div class="wrapper-list">
+          <svg class="wrapper-icon" width="52" height="52">
+            <use href="./img/icons.svg#icon-number-two"></use>
+          </svg>
+          <li class="wrapper-list-item">
+            Click on <span class="wrap-text-li">the basket</span> and fill out
+            the form.
+          </li>
+        </div>
+        <div class="wrapper-list">
+          <svg class="wrapper-icon" width="52" height="52">
+            <use href="./img/icons.svg#icon-number-three"></use>
+          </svg>
+          <li class="wrapper-list-item">
+            Sit back and relax! Your
+            <span class="wrap-text-li">fresh vegetables</span> basket will be
+            delivered.
+          </li>
+        </div>
+      </ol>
+    </div>
   </div>
 </section>
