@@ -1,5 +1,5 @@
 .advertisement {
-  margin: 100px;
+  margin: 100px 0;
 }
 .advertisement-wrapper {
   color: var(--text-color);
@@ -13,5 +13,6 @@
   color: var(--background);
   border-radius: 12px;
   background-color: var(--secondary-brand-color);
-  padding: 0 10px;
+  padding: 0 14px;
+  margin-left: -14px;
 }
