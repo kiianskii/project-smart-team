@@ -1,6 +1,23 @@
+.reviews{
+    background-color: var(--background);
+}
 
-.reviews .container{
-    padding: 100px;
+@media only screen and (min-width: 320px) and (max-width: 767.98px){
+.reviews .container {
+        padding: 80px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.reviews .container {
+        padding: 100px 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+.reviews .container {
+        padding: 100px;
+    }
 }
 
 .reviews-title {
@@ -12,6 +29,15 @@
     letter-spacing: -0.015em;
     text-transform: uppercase;
     margin: 0 0 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+   .reviews-title{
+        width: 335px;
+        font-size: 48px;
+        line-height: 1.04;
+        margin-bottom: 20px;
+  }
 }
 
 .reviews-title-span {
@@ -26,6 +52,15 @@
     margin: 0 0 50px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    .reviews-text {
+        width: 335px;
+        font-size: 14px;
+        line-height: 1.28;
+        margin-bottom: 40px;
+    }
+}
+
 .reviews-list {
     display: flex;
     gap: 25px;
@@ -33,13 +68,34 @@
     padding: 0;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+   .reviews-list{
+        display: block;
+  }
+}
+
 .reviews-list-item {
     border-radius: 24px;
-        border: 1px solid rgba(122, 49, 69, 0.30);
-        background: var(--background);
-        padding: 20px;
-        width: 343px;
-        box-sizing: border-box;
+    border: 1px solid rgba(122, 49, 69, 0.30);
+    background-color: var(--background);
+    padding: 20px;
+    width: 343px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+.reviews-list-item:not(:first-child){
+        display: none;
+  }
+  .reviews-list-item:first-child {
+      padding: 20px 16px;
+      width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
+.reviews-list-item:last-child {
+        display: none;
+    }
 }
 
 .reviews-list-image {
