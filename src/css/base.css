@@ -1,13 +1,3 @@
-@import url('./base.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./howitwork.css');
-@import url('./advertisement.css');
-@import url('./vegetables.css');
-@import url('./review.css');
-@import url('./order.css');
-@import url('./footer.css');
-
 @font-face {
   font-family: 'Studio Pro';
   font-style: normal;
@@ -56,7 +46,8 @@ p {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
   list-style-type: none;
@@ -70,13 +61,26 @@ img {
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-   .container{
+  .container {
     width: 768px;
   }
 }
 @media only screen and (min-width: 1280px) {
-   .container{
-    width: 1104px;
-    
+  .container {
+    width: 1280px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
