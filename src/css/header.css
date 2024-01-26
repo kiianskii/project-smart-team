@@ -72,6 +72,8 @@ button {
   flex-direction: column;
   align-items: stretch;
   gap: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* #endregion */
@@ -82,6 +84,9 @@ button {
   border-radius: 12px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   padding: 12px;
+
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-white {
@@ -144,7 +149,24 @@ button {
 /* #endregion */
 
 /* #region hover, focus and active styles */
-
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--brand-color);
+  background-color: var(--background);
+}
+.nav-link-white:hover,
+.nav-link-white:focus,
+.nav-link-white:active {
+  color: rgba(122, 49, 69, 0.7);
+}
+/* #endregion */
+/* #region hover, focus and active styles */
+@media only screen and (max-width: 767.98px) {
+  .menu-btn .icon {
+    transform: scale(0.8);
+  }
+}
 /* #endregion */
 
 /* #region tablet - more than 768px */
@@ -173,6 +195,7 @@ button {
 
   .nav-link-pink {
     padding: 16px 32px;
+    font-size: 18px;
   }
 }
 /* #endregion */
@@ -206,9 +229,18 @@ button {
   }
 
   .nav-link-pink {
-    background-color: var(--brand-color);
     color: var(--background);
+    background-color: var(--brand-color);
   }
+
+  /* #region hover, focus and active styles */
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
+    color: var(--background);
+    background-color: var(--hover-color);
+  }
+  /* #endregion */
 }
 /* #endregion */
 
