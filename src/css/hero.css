@@ -7,6 +7,7 @@
   display: flex;
   padding-right: 0;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .hero-wrapper {
@@ -21,7 +22,6 @@
   width: 502px;
   margin-top: 230px;
   margin-bottom: 136px;
-  margin-left: 100px;
 }
 
 .hero-text {
@@ -29,5 +29,4 @@
   line-height: 1.25;
   letter-spacing: -0.02em;
   width: 472px;
-  margin-left: 100px;
 }
