@@ -12,21 +12,15 @@ body {
 
 .header-container {
   max-width: 1280px;
+  width: 100%;
   display: flex;
   margin: 0 auto;
+  padding: 16px 24px 0;
 }
 /* #endregion */
 
 /* #region reset styles */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  text-decoration: none;
-
   display: block;
 }
 
@@ -41,9 +35,14 @@ button {
 /* #region logo styles*/
 .logo,
 .logo-mob {
+  display: flex;
   align-items: center;
   gap: 8px;
   margin-right: auto;
+}
+
+.logo {
+  display: none;
 }
 /* #endregion */
 
@@ -59,6 +58,7 @@ button {
 .logo .icon {
   fill: var(--background);
 }
+
 /* #endregion */
 
 /* #region menu styles */
@@ -69,7 +69,8 @@ button {
 }
 .nav-list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 8px;
 }
 
@@ -82,12 +83,18 @@ button {
   border: 1px solid rgba(251, 251, 251, 0.2);
   padding: 12px;
 }
+
+.nav-link-white {
+  color: var(--brand-color);
+  background-color: var(--background);
+}
+
 .nav-link-pink {
   border-radius: 30px;
-  background-color: var(--brand-color);
-  padding: 16px 32px;
+  padding: 16px 41px;
+  margin-top: auto;
 
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.015em;
@@ -95,40 +102,67 @@ button {
 }
 /* #endregion */
 
-@media only screen and (max-width: 768px) {
-  .nav-item {
-    width: 119px;
-  }
-
-  .header-container {
-    padding: 16px 24px 0;
-  }
-
-  .is-open .nav {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .nav-link-pink {
-    font-size: 14px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .logo-mob {
-    display: flex;
-  }
+/* #region modal styles */
+.backdrop {
+  display: none;
 }
 
+.is-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  background-color: rgba(20, 20, 20, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.is-open .nav {
+  background-color: var(--brand-color);
+  padding: 80px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+/* #endregion */
+
+/* #region hover, focus and active styles */
+
+/* #endregion */
+
+/* #region tablet - more than 768px */
 @media only screen and (min-width: 768px) {
   .header-container {
     padding: 35px 32px 0;
   }
 
+  .logo {
+    display: flex;
+  }
+  .logo-mob {
+    display: none;
+  }
+
   .is-open .nav {
     width: 350px;
+    font-size: 16px;
   }
 
   .close-btn {
@@ -137,66 +171,24 @@ button {
     right: 32px;
   }
 
-  .nav-item {
-    width: 123px;
-  }
-  .logo {
-    display: flex;
-  }
-  .logo-mob {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1279.98px) {
-  .backdrop {
-    display: none;
-  }
-  .nav-list {
-    margin-top: 380px;
-  }
   .nav-link-pink {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .is-open {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-
-    background-color: rgba(20, 20, 20, 0.4);
-    height: 100%;
-    width: 100%;
-  }
-
-  .is-open .nav {
-    background-color: var(--brand-color);
-    padding: 80px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 16px;
-    right: 24px;
+    padding: 16px 32px;
   }
 }
+/* #endregion */
 
+/* #region tablet - more than 1280px */
 @media only screen and (min-width: 1280px) {
   .header-container {
-    padding: 32px 100px 0px;
+    padding-top: 28px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .backdrop {
+    display: block;
   }
 
   .nav {
@@ -204,18 +196,25 @@ button {
     gap: 20px;
   }
 
-  .nav-item {
-    height: fit-content;
-  }
-
   .nav-list {
     flex-direction: row;
   }
 
-  .menu-btn {
-    display: none;
+  .nav-link-white {
+    color: var(--background);
+    background-color: transparent;
   }
-  .nav-item {
-    width: fit-content;
+
+  .nav-link-pink {
+    background-color: var(--brand-color);
+    color: var(--background);
+  }
+}
+/* #endregion */
+
+/* devices with short height - less than 375px */
+@media only screen and (max-height: 375px) {
+  .is-open .nav {
+    padding: 50px;
   }
 }
