@@ -16,7 +16,7 @@
 
 @media only screen and (min-width: 1280px) {
   .footer-section .container {
-    padding: 0 100px;
+    padding: 0;
   }
 }
 
@@ -38,6 +38,24 @@
 @media only screen and (min-width: 1280px) {
   .footer-section .block-1 {
     margin-right: 0;
+  }
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.logo-mobile {
+  display: unset;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-desktop {
+    display: unset;
+  }
+
+  .logo-mobile {
+    display: none;
   }
 }
 
