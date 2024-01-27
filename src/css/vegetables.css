@@ -4,10 +4,6 @@
   padding-bottom: 80px;
 }
 
-.vegetables-conteiner {
-  width: 100%;
-}
-
 .vegetables-title {
   color: var(--background);
   font-size: 48px;
@@ -114,6 +110,8 @@
   margin-bottom: 10px;
 }
 
+/* #region Adaptive style*/
+
 @media only screen and (min-width: 768px) {
   .vegetables {
     padding-top: 150px;
@@ -212,3 +210,4 @@
     padding: 32px 33px 45px;
   }
 }
+/* #endregion Adaptive style*/
