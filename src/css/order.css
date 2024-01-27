@@ -268,6 +268,10 @@
         line-height: 1.11;
         letter-spacing: -0.015em;
     }
+    
+    .follow-list-item:not(:last-child)::after {
+        font-size: 32px;
+    }
 
     .order-follow {
         max-width: 628px;
