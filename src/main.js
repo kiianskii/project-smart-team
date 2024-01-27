@@ -1,19 +1,33 @@
+const mobileMenu = {
+  showBtn: document.querySelector('[data-modal-show]'),
+  closeBtn: document.querySelector('[data-modal-close]'),
+  menu: document.getElementById('menuModal'),
+};
+
+mobileMenu.showBtn.addEventListener('click', ShowModal);
+
+mobileMenu.closeBtn.addEventListener('click', CloseModal);
+
 function ShowModal() {
-  const elem = document.getElementById('menuModal');
-  elem.classList.add('is-open');
+  mobileMenu.menu.classList.add('is-open');
 
   AddListener('navList');
   AddListener('navLink');
 }
 
 function CloseModal() {
-  const elem = document.getElementById('menuModal');
-  elem.classList.remove('is-open');
+  mobileMenu.menu.classList.remove('is-open');
+
+  RemoveListener('navList');
+  RemoveListener('navLink');
 }
 
 function AddListener(id) {
   const item = document.getElementById(id);
-  item.addEventListener('click', () => {
-    CloseModal();
-  });
+  item.addEventListener('click', CloseModal);
+}
+
+function RemoveListener(id) {
+  const item = document.getElementById(id);
+  item.removeEventListener('click', CloseModal);
 }
