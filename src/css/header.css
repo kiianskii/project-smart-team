@@ -299,7 +299,7 @@ button {
 }
 /* #endregion */
 
-/* #region tablet - more than 1280px */
+/* #region desktop - more than 1280px */
 @media only screen and (min-width: 1280px) {
   .header-container {
     padding-top: 28px;
