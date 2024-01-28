@@ -29,7 +29,6 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  width: 335px;
 }
 
 .vegetable-btn {
@@ -104,6 +103,14 @@
 }
 
 /* #region Adaptive style*/
+@media only screen and (max-width: 767px) {
+  .vegetables-title {
+    max-width: 335px;
+  }
+  .vegetables-story {
+    max-width: 335px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .vegetables {
@@ -116,7 +123,7 @@
   .vegetables-title {
     font-size: 64px;
     line-height: 1;
-    width: 508px;
+    max-width: 508px;
     margin-bottom: 25px;
   }
 }
@@ -133,7 +140,7 @@
   .vegetables-story {
     font-size: 16px;
     line-height: 1.25;
-    width: 626px;
+    max-width: 626px;
     margin-right: auto;
   }
 }
