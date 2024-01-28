@@ -52,8 +52,15 @@
   line-height: 1;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  padding: 0 8px;
+  padding: 0 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 345px) {
+  .hero-title {
+    padding: 0 10px;
+    font-size: 46px;
+  }
 }
 
 @media screen and (min-width: 768px) {
