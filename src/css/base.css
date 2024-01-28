@@ -22,6 +22,10 @@
   --hover-color: #622133;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Studio Pro';
   font-size: 16px;
@@ -30,6 +34,7 @@ body {
   line-height: 1.25;
   letter-spacing: -0.02em;
   margin: 0;
+  background: var(--brand-color);
 }
 
 a {

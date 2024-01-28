@@ -1,84 +1,45 @@
-
-.vegetables-section  {
+.vegetables {
   background-color: var(--brand-color);
-  width: 100%;
-  padding: 80px 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .vegetables-section {
-    padding: 150px 32px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .vegetables-section {
-    padding: 150px 100px;
-  }
-}
-
-.vegetables-section .container {
-  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .vegetables-title {
-color: var(--background);
-font-size: 48px;
-font-weight: 700;
-line-height: 1.04;
-letter-spacing: -0.015em;
-text-transform: uppercase;
-width: 335px;
-text-transform: uppercase;
-margin-bottom: 20px;}
-
-@media only screen and (min-width: 768px) {
-  .vegetables-title {
-  font-size: 64px;
-  line-height: 1;
-  width: 508px;
-  margin-bottom: 25px;
-}
+  color: var(--background);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  width: 335px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .vegetables-accent {
-color: rgba(251, 251, 251, 0.30);
-font-size: 48px;
-font-weight: 700;
-line-height: 50px;
-letter-spacing: -0.015em;
-text-transform: uppercase;}
-
-@media only screen and (min-width: 768px) {
-.vegetables-accent {
-  font-size: 64px;
-font-weight: 700;
-line-height: 1; 
+  color: rgba(251, 251, 251, 0.3);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 }
+
+.vegetables-pb {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .vegetables-story {
-color: var(--background);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.28; 
-letter-spacing: -0.02em;
-width: 335px;
-
+  color: var(--background);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  width: 335px;
 }
 
-@media only screen and (min-width: 768px) {
-  .vegetables-story {
-font-size: 16px;
-line-height: 1.25;
-width: 626px;
-margin-right: 290px;
-display: inline-flex;
-flex-wrap: wrap;
-}
-}
-
-.vegetables-btn { 
+.vegetable-btn {
   font-size: 14px;
   color: var(--background);
   background-color: var(--brand-color);
@@ -88,30 +49,26 @@ flex-wrap: wrap;
   text-transform: uppercase;
   padding: 16px 41px;
   border-radius: 30px;
-border: 1px solid rgba(251, 251, 251, 0.20);
-display: inline-flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-cursor: pointer;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .vegetables-btn {
-      display: none;
-}
-}
-
-@media only screen and (min-width: 1280px) {
-  .vegetables-btn {
-      font-size: 18px;
-      line-height: 1.11;
-      padding: 16px 32px;
-      margin-bottom: 50px;
-      margin-right: 100px;
-}
+.button-buttom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
+.vegetables-btn {
+  display: none;
+}
 
 .vegetables-list {
   display: inline-flex;
@@ -119,40 +76,17 @@ cursor: pointer;
   row-gap: 20px;
 }
 
-
-@media only screen and (min-width: 768px) {
-.vegetables-list  {
-flex-direction: row;
-flex-wrap: wrap;
-column-gap: 18px;
-row-gap: 28px;
-}
-}
-
 .vegetables-icon {
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .vegetables-item {
   text-align: center;
   border-radius: 40px;
-background-color: var(--background);
-padding: 32px 26px 45px 27px;
-}
-
-@media only screen and (min-width: 768px) {
-  .vegetables-item {
-    width: 343px;
-    width: calc((100% - 18px) / 2);
-      padding: 32px 30px 45px 31px;  
-}
-}
-@media only screen and (min-width: 1280px) {
-  .vegetables-item {
-    width: 348px;
-      width: calc((100% - 36px) / 3);
-      padding: 32px 33px 45px; 
-}
+  background-color: var(--background);
+  padding: 32px 26px 45px 27px;
 }
 
 .vegetables-caption {
@@ -165,20 +99,115 @@ padding: 32px 26px 45px 27px;
   margin-bottom: 12px;
 }
 
-@media only screen and (min-width: 768px) {
-  .vegetables-caption {
-      font-size: 32px;
-}
-}
-
 .vegetables-price {
   color: var(--text-color);
-font-size: 14px;
-font-weight: 700;
-line-height: 1.29;
-letter-spacing: -0.015;
-text-transform: uppercase;
-text-align: left;
-margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.015;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
+/* #region Adaptive style*/
+
+@media only screen and (min-width: 768px) {
+  .vegetables {
+    padding-top: 150px;
+  padding-bottom: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-title {
+    font-size: 64px;
+    line-height: 1;
+    width: 508px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-accent {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-story {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 626px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .vegetables-btn {
+    display: none;
+  }
+  .vegetable-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-item {
+    width: 343px;
+    width: calc((100% - 18px) / 2);
+    padding: 32px 30px 45px 31px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-caption {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .vegetables-btn {
+    font-size: 18px;
+    color: var(--background);
+    background-color: var(--brand-color);
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 30px;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .vegetable-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .vegetables-item {
+    width: 348px;
+    width: calc((100% - 36px) / 3);
+    padding: 32px 33px 45px;
+  }
+}
+/* #endregion Adaptive style*/
