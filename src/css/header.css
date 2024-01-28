@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
   padding: 16px 24px 0;
 }
+
+.block-scroll {
+  overflow: hidden;
+}
 /* #endregion */
 
 /* #region reset styles */
