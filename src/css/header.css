@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
   padding: 16px 24px 0;
 }
+
+.block-scroll {
+  overflow: hidden;
+}
 /* #endregion */
 
 /* #region reset styles */
@@ -299,7 +303,7 @@ button {
 }
 /* #endregion */
 
-/* #region tablet - more than 1280px */
+/* #region desktop - more than 1280px */
 @media only screen and (min-width: 1280px) {
   .header-container {
     padding-top: 28px;
