@@ -10,20 +10,14 @@
   font-weight: 700;
   line-height: 1.04;
   letter-spacing: -0.015em;
-  text-transform: uppercase;
-  width: 335px;
+  max-width: 335px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .vegetables-accent {
-  color: rgba(251, 251, 251, 0.3);
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
-}
+    color: rgba(251, 251, 251, 0.3);
+  }
 
 .vegetables-pb {
   display: flex;
@@ -36,7 +30,7 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  width: 335px;
+  max-width: 335px;
 }
 
 .vegetable-btn {
