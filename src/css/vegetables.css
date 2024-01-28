@@ -15,8 +15,8 @@
 }
 
 .vegetables-accent {
-    color: rgba(251, 251, 251, 0.3);
-  }
+  color: rgba(251, 251, 251, 0.3);
+}
 
 .vegetables-pb {
   display: flex;
@@ -103,6 +103,12 @@
 }
 
 /* #region Adaptive style*/
+@media screen and (max-width: 345px) {
+  .vegetables-title {
+    font-size: 46px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .vegetables-title {
     max-width: 335px;
@@ -115,7 +121,7 @@
 @media only screen and (min-width: 768px) {
   .vegetables {
     padding-top: 150px;
-  padding-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 
