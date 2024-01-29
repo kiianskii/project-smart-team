@@ -20,7 +20,7 @@
 
 .vegetables-pb {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .vegetables-story {
@@ -96,10 +96,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.29;
-  letter-spacing: -0.015;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 /* #region Adaptive style*/
@@ -148,8 +148,10 @@
     line-height: 1.25;
     max-width: 626px;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .vegetables-btn {
