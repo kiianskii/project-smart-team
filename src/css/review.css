@@ -72,10 +72,10 @@
 }
 
 .reviews-list {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 0;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767.98px) {
@@ -83,11 +83,11 @@
         display: block;
   }
 }
-.reviews-list {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  padding: 0;
+
+@media only screen and (max-width: 1279.98px) {
+  .reviews-list {
+    gap: 18px;
+  }
 }
 
 .reviews-list-item {
@@ -151,6 +151,8 @@
   text-align: center;
   line-height: 140%;
   letter-spacing: -0.02em;
+  width: 288px;
+  margin: 0 auto;
 }
 .text-gap {
   display: none;
