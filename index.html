@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-smart-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-smart-team/assets/index-6e55a1b7.css">
+    <link rel="stylesheet" href="/project-smart-team/assets/index-aae39ddc.css">
   </head>
   <body id="body">
     <header class="header">
@@ -93,26 +93,37 @@
       </p>
     </div>
     <div class="hero-img">
-      <picture class="hero-img">
+      <picture class="img-hero">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/project-smart-team/assets/box-fruits@1x_webp-9e6a8005.webp 1x, /project-smart-team/assets/box-fruits@2x_webp-015154c5.webp 2x"
+          type="image/webp"
+        />
+
         <source
           media="(min-width: 1280px)"
           srcset="/project-smart-team/assets/box-fruits@1x-adb7c028.jpg 1x, /project-smart-team/assets/box-fruits@2x-ec581404.jpg 2x"
-          width="650"
-          height="800"
+          type="image/jpg"
         />
-
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-smart-team/assets/box-fruits-tab@1x_webp-3191ee29.webp 1x, /project-smart-team/assets/box-fruits-tab@2x_webp-99022ef2.webp 2x"
+          type="image/webp"
+        />
         <source
           media="(min-width: 768px)"
           srcset="/project-smart-team/assets/box-fruits-tab@1x-658aacf8.jpg 1x, /project-smart-team/assets/box-fruits-tab@2x-01449b53.jpg 2x"
-          width="768"
-          height="518"
+          type="image/jpg"
         />
-
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-smart-team/assets/box-fruits-mob@1x_webp-4506f566.webp 1x, /project-smart-team/assets/box-fruits-mob@2x_webp-40d5853c.webp 2x"
+          type="image/webp"
+        />
         <source
           media="(max-width: 767px)"
           srcset="/project-smart-team/assets/box-fruits-mob@1x-22b1e699.jpg 1x, /project-smart-team/assets/box-fruits-mob@2x-43f1a949.jpg 2x"
-          width="375"
-          height="370"
+          type="image/jpg"
         />
         <img
           class="img-hero"
