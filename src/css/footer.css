@@ -47,21 +47,14 @@
   }
 }
 
-.logo-desktop {
-  display: none;
-}
-
 .logo-mobile {
-  display: unset;
+  margin-top: -4px;
 }
 
 @media only screen and (min-width: 768px) {
-  .logo-desktop {
-    display: unset;
-  }
-
   .logo-mobile {
-    display: none;
+    width: 194px;
+    height: 18px;
   }
 }
 
@@ -71,10 +64,10 @@
 
 .footer-section .footer-top-p {
   color: var(--background);
-  line-height: 18px;
-  letter-spacing: -0.28px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
   width: 296px;
-  margin-top: 16px;
+  margin-top: 14px;
   font-size: 14px;
 }
 
@@ -83,7 +76,7 @@
     line-height: 20px;
     letter-spacing: -0.32px;
     width: 265px;
-    margin-top: 26px;
+    margin-top: 25px;
     font-size: 16px;
   }
 }
