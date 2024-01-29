@@ -5,7 +5,34 @@
       <picture>
         <source
           media="(min-width: 1280px)"
+          srcset="./img/up/woman-deck.avif 1x, ./img/up/woman-deck@2x.avif 2x"
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/up/cooking@1x_webp.webp 1x,
+            ./img/up/cooking@2x_webp.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
           srcset="./img/up/cooking@1x.png 1x, ./img/up/cooking@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/up/woman-tab.avif 1x, ./img/up/woman-tab@2x.avif 2x"
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/up/cooking-tab@1x_webp.webp 1x,
+            ./img/up/cooking-tab@2x_webp.webp 2x
+          "
+          type="image/webp"
         />
         <source
           media="(min-width: 768px)"
@@ -13,6 +40,20 @@
             ./img/up/cooking-tab@1x.png 1x,
             ./img/up/cooking-tab@2x.png 2x
           "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/up/woman-mob.avif 1x, ./img/up/woman-mob@2x.avif 2x"
+          type="image/avif"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/up/cooking-mob@1x_webp.webp 1x,
+            ./img/up/cooking-mob@2x_webp.webp 2x
+          "
+          type="image/webp"
         />
         <source
           media="(max-width: 767px)"
@@ -20,11 +61,15 @@
             ./img/up/cooking-mob@1x.png 1x,
             ./img/up/cooking-mob@2x.png 2x
           "
+          type="image/png"
         />
         <img
           class="wrapper-img"
           src="./img/up/cooking@1x.png"
           alt="Cooking woman"
+          width="335"
+          height="450"
+          loading="lazy"
         />
       </picture>
     </div>
