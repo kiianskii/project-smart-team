@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-smart-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-smart-team/assets/index-01b85eb2.css">
+    <link rel="stylesheet" href="/project-smart-team/assets/index-2acb094c.css">
   </head>
   <body id="body">
     <header class="header">
@@ -328,6 +328,7 @@
           srcset="/project-smart-team/assets/john-wax@1x-c5e9f657.png 1x, /project-smart-team/assets/john-wax@2x-6b706c40.png 2x"
           src="/project-smart-team/assets/john-wax@1x-c5e9f657.png"
           alt="John Wax photo"
+          loading="lazy"
         />
         <h3 class="reviews-list-title">John Wax</h3>
         <p class="reviews-list-text">
@@ -345,6 +346,7 @@
           srcset="/project-smart-team/assets/victoria@1x-5a3d8356.png 1x, /project-smart-team/assets/victoria@2x-28ec240c.png 2x"
           src="/project-smart-team/assets/victoria@1x-5a3d8356.png"
           alt="Victoria Romashenko photo"
+          loading="lazy"
         />
         <h3 class="reviews-list-title">Victoria Romashenko</h3>
         <p class="reviews-list-text">
@@ -361,6 +363,7 @@
           srcset="/project-smart-team/assets/ihor-trachuk@1x-b406c222.png 1x, /project-smart-team/assets/ihor-trachuk@2x-327c66f8.png 2x"
           src="/project-smart-team/assets/ihor-trachuk@1x-b406c222.png"
           alt="Ihor Trachuk photo"
+          loading="lazy"
         />
         <h3 class="reviews-list-title">Ihor Trachuk</h3>
         <p class="reviews-list-text">
@@ -374,111 +377,137 @@
 </section>
 
       <section class="order" id="order">
-    <div class="container">
-        <h2 class="order-title">
-            Fresh <span>Harvest</span> Box has got you covered  
-        </h2>
-        <p class="order-p">
-            Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. 
-            Order your box today and start enjoying the best that nature has to offer!
-        </p>
-        <div class="order-input-box">
-            <div class="order-form-wrapper">
-                <form class="order-form" name="order-form">
-                    <p class="order-form-text">
-                        Ordering <span class="purple">from us</span> is quick and easy! Fill
-                        out <span class="green">the form</span> below and we will contact
-                        you!
-                    </p>
-                    <div class="input-container">
-                        <label for="name" class="input-label"></label>
-                        <input 
-                            id="name"
-                            type="text"
-                            class="form-input"
-                            name="name"
-                            placeholder="Full Name"
-                            required
-                            pattern="[A-Za-z ']{3,}"
-                        />
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="input-label"></label>
-                        <input 
-                            id="email"
-                            type="text"
-                            class="form-input"
-                            name="email"
-                            placeholder="Email"
-                            required
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                        />
-                    </div>
-                    <div class="input-container">
-                        <label for="user-comment" class="input-label"></label>
-                        <textarea 
-                            name="user-comment" 
-                            id="user-comment"
-                            class="user-comment"
-                            placeholder="Comment"></textarea>
-                    </div>
-                    <button type="submit" class="order-button">Send</button>
-                </form>
-            </div>
-            <div class="order-follow">
-                <picture class="follow-img">
-                    <source 
-                        media="(min-width: 1280px)"
-                        srcset="/project-smart-team/assets/smoothies@1x-73247cd8.png 1x, /project-smart-team/assets/smoothies@2x-c1a2fafa.png 2x"    
-                    />
-                    <source
-                        media="(min-width: 768px) and (max-width:1279px)"
-                        srcset="/project-smart-team/assets/smoothies-tab@1x-14d48200.png 1x, /project-smart-team/assets/smoothies-tab@2x-72e3cae7.png 2x"
-                    />
-                    <source
-                        media="(min-width: 320px) and (max-width: 767px)"
-                        srcset="/project-smart-team/assets/smoothies-mob@1x-f76da5a1.png 1x, /project-smart-team/assets/smoothies-mob@2x-b6107695.png 2x"
-                    />
-                    <img 
-                        class="smoothie-img"
-                        src="/project-smart-team/assets/smoothies-mob@1x-f76da5a1.png"
-                        alt="Bottle Smoothies"
-                    />
-                </picture>
-                <p class="follow-text">Follow us on our social networks:</p>
-                <ul class="follow-list">
-                    <li class="follow-list-item">
-                        <a 
-                            href="https://www.instagram.com/goitclub/"
-                            class="follow-social-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            instagram
-                        </a>
-                    </li>
-                    <li class="follow-list-item">
-                        <a 
-                            href="https://www.facebook.com/goITclub/"
-                            class="follow-social-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            facebook
-                        </a>
-                    </li>
-                    <li class="follow-list-item">
-                        <a 
-                            href="https://www.youtube.com/c/GoIT"
-                            class="follow-social-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            youtube
-                        </a>
-                    </li>                    
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="order-title">
+      Fresh <span>Harvest</span> Box has got you covered
+    </h2>
+    <p class="order-p">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-input-box">
+      <div class="order-form-wrapper">
+        <form class="order-form" name="order-form">
+          <p class="order-form-text">
+            Ordering <span class="purple">from us</span> is quick and easy! Fill
+            out <span class="green">the form</span> below and we will contact
+            you!
+          </p>
+          <div class="input-container">
+            <label for="name" class="input-label"></label>
+            <input
+              id="name"
+              type="text"
+              class="form-input"
+              name="name"
+              placeholder="Full Name"
+              required
+              pattern="[A-Za-z ']{3,}"
+            />
+          </div>
+          <div class="input-container">
+            <label for="email" class="input-label"></label>
+            <input
+              id="email"
+              type="text"
+              class="form-input"
+              name="email"
+              placeholder="Email"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            />
+          </div>
+          <div class="input-container">
+            <label for="user-comment" class="input-label"></label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="order-button">Send</button>
+        </form>
+      </div>
+      <div class="order-follow">
+        <picture class="follow-img">
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-smart-team/assets/smoothies@1x_webp-a6de9bc6.webp 1x, /project-smart-team/assets/smoothies@2x_webp-c1997ec8.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-smart-team/assets/smoothies@1x-73247cd8.png 1x, /project-smart-team/assets/smoothies@2x-c1a2fafa.png 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px) and (max-width:1279px)"
+            srcset="/project-smart-team/assets/smoothies-tab@1x_webp-e9256a42.webp 1x, /project-smart-team/assets/smoothies-tab@2x_webp-1c7321f5.webp 2x"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 768px) and (max-width:1279px)"
+            srcset="/project-smart-team/assets/smoothies-tab@1x-14d48200.png 1x, /project-smart-team/assets/smoothies-tab@2x-72e3cae7.png 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 320px) and (max-width: 767px)"
+            srcset="/project-smart-team/assets/smoothies-mob@1x_webp-c92414fc.webp 1x, /project-smart-team/assets/smoothies-mob@2x_webp-362c3e4d.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 320px) and (max-width: 767px)"
+            srcset="/project-smart-team/assets/smoothies-mob@1x-f76da5a1.png 1x, /project-smart-team/assets/smoothies-mob@2x-b6107695.png 2x"
+            type="image/jpg"
+          />
+          <img
+            class="smoothie-img"
+            src="/project-smart-team/assets/smoothies-mob@1x-f76da5a1.png"
+            alt="Bottle Smoothies"
+            loading="lazy"
+          />
+        </picture>
+        <p class="follow-text">Follow us on our social networks:</p>
+        <ul class="follow-list">
+          <li class="follow-list-item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="follow-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              instagram
+            </a>
+          </li>
+          <li class="follow-list-item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="follow-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              facebook
+            </a>
+          </li>
+          <li class="follow-list-item">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="follow-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              youtube
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
+
     </main>
 
     <footer class="footer-section">
