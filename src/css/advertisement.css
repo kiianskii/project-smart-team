@@ -34,11 +34,11 @@
   border-radius: 12px;
   background-color: var(--secondary-brand-color);
   padding: 0 14px;
-  margin-left: -14px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 @media screen and (max-width: 767.98px) {
   .advertisement-discount {
     display: block;
-    margin-left: -10px;
   }
 }
