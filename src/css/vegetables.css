@@ -160,6 +160,9 @@
   .vegetable-btn {
     display: none;
   }
+  .button-buttom {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -168,6 +171,9 @@
     flex-wrap: wrap;
     column-gap: 18px;
     row-gap: 28px;
+  }
+  .vegetables-price {
+    margin-bottom: 10px;
   }
 }
 
@@ -208,6 +214,9 @@
     height: 54px;
   }
   .vegetable-btn {
+    display: none;
+  }
+  .button-buttom {
     display: none;
   }
 }
