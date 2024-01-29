@@ -157,7 +157,7 @@
 }
 
 .footer-section .address-ul {
-  margin-top: 64px;
+  margin-top: 40px;
   display: flex;
   width: 215px;
   flex-direction: column;
@@ -186,6 +186,7 @@
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.21px;
+  width: 179px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -193,6 +194,7 @@
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.27px;
+    width: 215px;
   }
 }
 
